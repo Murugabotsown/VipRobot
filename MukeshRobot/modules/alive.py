@@ -19,8 +19,8 @@ PHOTO = [
 
 Mukesh = [
     [
-        InlineKeyboardButton(text="📍𝐎𝐰𝐧𝐞𝐫📍", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🍒𝐆𝐫𝐨𝐮𝐩🍒", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="𝐎𝐰𝐧𝐞𝐫", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
@@ -54,18 +54,11 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.8)
     await m.reply_photo(
         lol,
-        caption=f"""**🌷ʜᴇʏ, ɪ ᴀᴍ 『[𝗩𝗜𝗣 𝗥𝗢𝗕𝗢𝗧](f"t.me/{BOT_USERNAME}")』🎄**
-   ╔═════ஜ۩۞۩ஜ════╗
-
-   ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [𝗩𝗜𝗣 𝗕𝗢𝗬](https://t.me/THE_VIP_BOY)♨️
-
-   ╚═════ஜ۩۞۩ஜ════╝""",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, {MUSIC_BOT_NAME} ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ..┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/thavarajtj) ...,
         reply_markup=InlineKeyboardMarkup(Mukesh),
     )
-__mod_name__ = "♨️ᴀʟɪᴠᴇ♨️"
+__mod_name__ = "ᴀʟɪᴠᴇ"
 __help__ = """
 
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
 » /alive*:* ᴛᴏ ᴄʜᴇᴀᴋ ❓  ɪ ᴀᴍ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ?
-
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆"""
