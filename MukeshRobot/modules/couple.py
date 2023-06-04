@@ -79,8 +79,6 @@ __help__ = """
 Choose couples in your chat
 
  ❍ /couple *:* Choose 2 users and send their name as couples in your chat.
-
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
-__mod_name__ = "♨️Cᴏᴜᴘʟᴇ♨️"
+__mod_name__ = "Cᴏᴜᴘʟᴇ"
