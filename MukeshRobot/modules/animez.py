@@ -243,8 +243,8 @@ def anime(update: Update, context: CallbackContext):
         if trailer:
             buttons = [
                 [
-                    InlineKeyboardButton("📍ᴍᴏʀᴇ ɪɴғᴏ📍", url=info),
-                    InlineKeyboardButton("📍ᴛʀᴀɪʟᴇʀ📍", url=trailer),
+                    InlineKeyboardButton("ᴍᴏʀᴇ ɪɴғᴏ", url=info),
+                    InlineKeyboardButton("ᴛʀᴀɪʟᴇʀ", url=trailer),
                 ]
             ]
         else:
@@ -488,14 +488,14 @@ def site_search(update: Update, context: CallbackContext, site: str):
         search_result = soup.find_all("h2", {"class": "post-title"})
 
         if search_result:
-            result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> @KaizokuAnime: \n"
+            result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> @Alinallmovies: \n"
             for entry in search_result:
                 post_link = "https://animekaizoku.com/" + entry.a["href"]
                 post_name = html.escape(entry.text)
                 result += f"• <a href='{post_link}'>{post_name}</a>\n"
         else:
             more_results = False
-            result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> @KaizokuAnime"
+            result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> @Alinallmovies"
 
     elif site == "kayo":
         search_url = f"https://animekayo.com/?s={search_query}"
@@ -503,7 +503,7 @@ def site_search(update: Update, context: CallbackContext, site: str):
         soup = bs4.BeautifulSoup(html_text, "html.parser")
         search_result = soup.find_all("h2", {"class": "title"})
 
-        result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> @KayoAnime: \n"
+        result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> @Alinallmovies: \n"
         for entry in search_result:
 
             if entry.text.strip() == "Nothing Found":
@@ -553,8 +553,6 @@ __help__ = """
  ❍ /kaizoku <ᴀɴɪᴍᴇ>*:* sᴇᴀʀᴄʜ ᴀɴ ᴀɴɪᴍᴇ ᴏɴ ᴀɴɪᴍᴇᴋᴀɪᴢᴏᴋᴜ.ᴄᴏᴍ
  ❍ /kayo <ᴀɴɪᴍᴇ>*:* sᴇᴀʀᴄʜ ᴀɴ ᴀɴɪᴍᴇ ᴏɴ ᴀɴɪᴍᴇᴋᴀʏᴏ.ᴄᴏᴍ
  ❍ /airing <ᴀɴɪᴍᴇ>*:* ʀᴇᴛᴜʀɴs ᴀɴɪᴍᴇ ᴀɪʀɪɴɢ ɪɴғᴏ.
-
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime)
@@ -575,7 +573,7 @@ dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
-__mod_name__ = "♨️Aɴɪᴍᴇ♨️"
+__mod_name__ = "Aɴɪᴍᴇ"
 __command_list__ = [
     "anime",
     "manga",
