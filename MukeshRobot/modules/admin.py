@@ -855,7 +855,7 @@ def adminlist(update, context):
             if custom_title:
                 text += f"<code> ┗━ {html.escape(custom_title)}</code>\n"
 
-    text += "\n💫 ᴀᴅᴍɪɴs :"
+    text += "\n💫ᴀᴅᴍɪɴs:"
 
     custom_admin_list = {}
     normal_admin_list = []
@@ -991,8 +991,6 @@ __help__ = """
 » /setgpic*:* ʀᴇᴘʟʏ ᴛᴏ ᴀɴ ɪᴍᴀɢᴇ ᴛᴏ sᴇᴛ ᴀs ɢʀᴏᴜᴘ ᴘʜᴏᴛᴏ
 » /setdesc*:* sᴇᴛ ɢʀᴏᴜᴘ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ
 » /setsticker*:* sᴇᴛ ɢʀᴏᴜᴘ sᴛɪᴄᴋᴇʀ
-
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
 SET_DESC_HANDLER = CommandHandler("setdesc", set_desc)
